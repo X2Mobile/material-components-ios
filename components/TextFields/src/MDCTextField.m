@@ -717,6 +717,7 @@ static const CGFloat MDCTextInputTextRectYCorrection = 1;
 - (void)layoutSubviews {
   [super layoutSubviews];
 
+  self.rightView = [[UIView alloc] initWithFrame:CGRectZero];
   [_fundament layoutSubviewsOfInput];
   if ([self needsUpdateUnderlinePosition]) {
     [self setNeedsUpdateConstraints];
