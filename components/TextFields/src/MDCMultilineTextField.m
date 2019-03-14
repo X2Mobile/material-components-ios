@@ -301,7 +301,7 @@
     self.textViewBottomSuperviewBottom =
         [NSLayoutConstraint constraintWithItem:self.textView
                                      attribute:NSLayoutAttributeBottom
-                                     relatedBy:NSLayoutRelationLessThanOrEqual
+                                     relatedBy:NSLayoutRelationEqual
                                         toItem:self
                                      attribute:NSLayoutAttributeBottom
                                     multiplier:1
