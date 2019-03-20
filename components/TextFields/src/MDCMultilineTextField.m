@@ -298,16 +298,16 @@
   self.textViewLeading.constant = self.textInsets.left;
 
   if (!self.textViewBottomSuperviewBottom) {
-    self.textViewBottomSuperviewBottom =
-        [NSLayoutConstraint constraintWithItem:self.textView
-                                     attribute:NSLayoutAttributeBottom
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:self
-                                     attribute:NSLayoutAttributeBottom
-                                    multiplier:1
-                                      constant:-1 * MDCTextInputHalfPadding];
-    self.textViewBottomSuperviewBottom.priority = UILayoutPriorityDefaultLow;
-    self.textViewBottomSuperviewBottom.active = YES;
+      self.textViewBottomSuperviewBottom =
+      [NSLayoutConstraint constraintWithItem:self.textView
+                                   attribute:NSLayoutAttributeBottom
+                                   relatedBy:NSLayoutRelationEqual
+                                      toItem:self
+                                   attribute:NSLayoutAttributeBottom
+                                  multiplier:1
+                                    constant:-3 * MDCTextInputHalfPadding];
+      self.textViewBottomSuperviewBottom.priority = UILayoutPriorityDefaultLow;
+      self.textViewBottomSuperviewBottom.active = YES;
   }
 
   if (!self.textViewTop) {
